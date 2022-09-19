@@ -79,6 +79,7 @@ learning.
 O projeto em questão demandou uso de três bases de dados principais oriundas de sensoriamento remoto, são estas:
 
 * Sentinel 2: Imagens multi-espectrais;
+* Landsat 8: Imagens multi-espectrais;
 * MapBiomas: Mapa de uso do solo;
 * GPM: Mapa de reconhecimento de chuva;
 
@@ -105,6 +106,8 @@ No próximo estágio do projeto, será desenvolvido um modelo capaz de reconhece
 
 Esta etapa consistiu em organizar as coleções isoladas em uma única estrutura que armazenava ambas as informações de entrada e saída em um formato que o modelo fosse capaz de usar para seu treinamento. Primeiramente, foi feito o processamento dos dados de entrada. Uma vez que o mapa de irrigação é um compilado quinzenal, optou-se por reduzir a escala temporal das imagens de satélite para esse mesmo grau. Assim, foi feito um recorte deste dentro do período de estudo, e aplicou-se um método para calcular a mediana de cada pixel dentro dessa janela, eliminando aqueles que apresentavam alto nível de nebulosidade. Por fim, selecionou-se as bandas relevantes para o reconhecimento, são estas as do espectro visível e infravermelho, listadas a seguir.
 
+Sentinel 2:
+
 * `B2`: Azul.
 * `B3`: Verde.
 * `B4`: Vermelho.
@@ -118,7 +121,37 @@ Esta etapa consistiu em organizar as coleções isoladas em uma única estrutura
 
 Em seguida, aplicou-se nas imagens os filtros dos mapas de cultivos e irrigação, para que apenas restassem áreas de interesse (agricultura irrigada). Assim, todo pixel das imagens que estivesse incluído nas regiões irrigadas, e ao mesmo também fizesse parte de uma das quatro categorias de cultura mencionadas, recebeu um rótulo do respectivo cultivo. Caso contrário, foi classificado como “vazio”.
 
-Este processo pode ser visualizado nas imagens abaixo. Esquerda: imagem do LandSat 8 em região de cana de açúcar em cores reais. Centro: áreas de cana-de-açúcar indicadas pelo MapBiomas (laranja), áreas reconhecidas como irrigadas (azul) e pertencem a ambos os grupos (cana-de-açúcar irrigada, marrom). Direita: Polígonos selecionados para treinamento (laranja são pixels de cana irrigados e vermelho “vazios”, ou seja, não é cana).
+Além dos dados já mencionados, como dito anteriormente, adquiriu-se também dados de cultivo através de pesquisa de campo. Esses dados foram utilizados para balizar as informações de uso do solo disponíveis até então, além de para permitir o reconhecimento de novas classes de cultivos não presentes no escopo do MapBiomas. Aos dados de campo foram adicionados novos pontos resultantes de comparação visual com imagens de satélite de alta resolução, disponíveis para visualização somente.
+
+Novas áreas definidas visualmente e pela pesquisa de campo para o treinamento do modelo podem ser visualizadas abaixo, de uva (roxo e azul), manga (laranja) e coco ou banana (branco).
+
+![Dados de campo e visuais](/assets/dados_campo_vis.png "Dados de campo e visuais")
+
+O resultado deste processo pode ser visualizado nas imagens a seguir. Esquerda: imagem do LandSat 8 em região de cana de açúcar em cores reais. Centro: áreas de cana-de-açúcar indicadas pelo MapBiomas (laranja), áreas reconhecidas como irrigadas (azul) e pertencem a ambos os grupos (cana-de-açúcar irrigada, marrom). Direita: Polígonos selecionados para treinamento (laranja são pixels de cana irrigados e vermelho “vazios”, ou seja, não é cana).
 
 ![Comparacao preproc](/assets/comp_preproc.png "Comparacao preproc")
 
+### Definição e treinamento do modelo de reconhecimento de cultivos irrigados
+
+Pela necessidade de maior esforço computacional, migrou-se do uso de modelos nativos do Google EE para Redes Neurais Artificiais (ANN) da TensorFlow Keras API, modelos que possuem integração com o Google Cloud e Google EE. A mudança de ambiente permitiu o aumento na quantidade de dados usados para treinamento, devido a menores limitações de memória.
+
+O desenvolvimento do modelo foi dividido em dois estágios: o primeiro consistiu no treinamento e validação somente com as categorias básicas disponíveis pelo mapa de uso do solo, e o segundo, com esses mesmos dados mais aqueles coletados em campo.
+
+O resultado do primeiro estágio está exposto na tabela a seguir.
+
+| Dados | Precisão (%) | Perda (Entropia Cruzada Categórica) |
+|---|---|---|
+|Treinamento|96,1%|0,150|
+|Validação|87,2%|0,456|
+|Teste|85,9%|0,454|
+
+
+![Resultados Petrolina e Juazeiro](/assets/results_petr.png "Resultados Petrolina e Juazeiro")
+
+A imagem acima exibe uma visualização da classificação (esquerda) comparada ao mapa de uso do solo (direita). A cor laranja indica áreas irrigadas de cana-de açúcar, e verde de outras culturas perenes. Resquícios de outras cores na imagem da classificação do modelo são resultado de reconhecimento incorreto de outros cultivos.
+
+Em seguida, treinou-se mais uma vez o modelo, dessa vez tanto com dados do MapBiomas, quanto coletados em campo e definidos visualmente por comparação. Os resultados estão exibidos na abaixo.
+
+![Resultados Petrolina e Juazeiro](/assets/results_petr_2.png "Resultados Petrolina e Juazeiro")
+
+A esquerda: áreas de cultivo irrigado reconhecidas pelo modelo em Petrolina, de uva (roxo), manga (laranja), coco ou banana (branco), cana (azul), herbáceas (vermelho) e café (rosa). A direita: áreas identificadas como irrigadas na mesma região. Nota-se forte presença de manga, uva e cana. Os dois primeiros estão completamente de acordo com o esperado, já a cana, apesar de não ser o que se imaginava, ainda é um cultivo possível nessa região. Em geral, o modelo manifesta a tendência esperada de acordo com a viagem de campo.
