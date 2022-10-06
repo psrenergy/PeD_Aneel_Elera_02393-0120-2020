@@ -1,0 +1,157 @@
+    1       211     FUNIL-GRANDE                      6
+    2        22     BATALHA                         251
+    3       251     SERRA FACAO                      24
+    4       207     CAPIM BRANC1                     28
+    5        28     CAPIM BRANC2                     31
+    6       205     CORUMBA IV                       23
+    7        48     PIRAJU                           49
+    8        66     ITAIPU                            0
+    9       131     NILO PECANHA                    306
+   10       303     FONTES                          306
+   11       141     BAGUARI                         148
+   12       154     SAO DOMINGOS                     46
+   13       155     RETIRO BAIXO                    156
+   14       156     TRES MARIAS                     169
+   15       158     QUEIMADO                        169
+   16       295     JAURU                             0
+   17       296     GUAPORE                         285
+   18        23     CORUMBA III                     209
+   19       227     SINOP                           228
+   20       228     COLIDER                         229
+   21       229     TELES PIRES                     230
+   22       230     SAO MANOEL                        0
+   23       241     SALTO DO RIO                     34
+   24       249     OURINHOS                         50
+   25       270     SERRA MESA                      191
+   26       191     CANA BRAVA                      253
+   27       253     SAO SALVADOR                    257
+   28       257     PEIXE ANGIC                     273
+   29       273     LAJEADO                         271
+   30       294     SALTO                           241
+   31       145     RONDON II                         0
+   32       281     PONTE PEDRA                       0
+   33       285     JIRAU                           287
+   34       287     STO ANTONIO                       0
+   35        99     ESPORA                           34
+   36       259     ITIQUIRA I                      252
+   37       252     ITIQUIRA II                       0
+   38       291     DARDANELOS                        0
+   39       247     CACU                            248
+   40       248     BARRA DOS CO                    261
+   41       261     FOZ DO RIO C                     34
+   42        54     STA BRANCA T                     57
+   43        57     MAUA                             61
+   44       117     GUARAPIRANGA                    319
+   45       319     BILLINGS                        318
+   46       318     HENRY BORDEN                      0
+   47       120     JAGUARI                         123
+   48       121     PARAIBUNA                       122
+   49       122     SANTA BRANCA                    123
+   50       123     FUNIL                           125
+   51       202     LAJES                             0
+   52       197     PICADA                          198
+   53       198     SOBRAGI                         129
+   54       129     SIMPLICIO                       130
+   55       130     I. POMBOS                         0
+   56       306     P. PASSOS                         0
+   57       134     SALTO GRANDE                    263
+   58       263     P. ESTRELA                      141
+   59       149     CANDONGA                        141
+   60       148     AIMORES                         144
+   61       144     MASCARENHAS                       0
+   62       262     GUILMAN-AMOR                    183
+   63       183     SA CARVALHO                     141
+   64       196     ROSAL                             0
+   65       279     SAMUEL                            0
+   66       255     IRAPE                           188
+   67       283     STA CLARA MG                      0
+   68         1     CAMARGOS                          2
+   69         2     ITUTINGA                        211
+   70         6     FURNAS                            7
+   71         7     M. DE MORAES                      8
+   72         8     ESTREITO                          9
+   73         9     JAGUARA                          10
+   74        10     IGARAPAVA                        11
+   75        11     VOLTA GRANDE                     12
+   76        12     P. COLOMBIA                      17
+   77        14     CACONDE                          15
+   78        15     E. DA CUNHA                      16
+   79        16     A.S.OLIVEIRA                     17
+   80        17     MARIMBONDO                       18
+   81        18     A. VERMELHA                      34
+   82        34     I.SOLTEIRA                       45
+   83        24     EMBORCACAO                       31
+   84        25     NOVA PONTE                      206
+   85       206     MIRANDA                         207
+   86       209     CORUMBA I                        31
+   87        31     ITUMBIARA                        32
+   88        32     CACH.DOURADA                     33
+   89        33     SAO SIMAO                        34
+   90        37     BARRA BONITA                     38
+   91        38     A.S.LIMA                         39
+   92        39     IBITINGA                         40
+   93        40     PROMISSAO                        42
+   94        42     NAVANHANDAVA                     43
+   95        43     T.IRMAOS                         45
+   96        45     JUPIA                            46
+   97        46     P.PRIMAVERA                      66
+   98       278     MANSO                             0
+   99        47     A.A.LAYDNER                      48
+  100        49     CHAVANTES                       249
+  101        50     L.N. GARCEZ                      51
+  102        51     CANOAS II                        52
+  103        52     CANOAS I                         61
+  104        61     CAPIVARA                         62
+  105        62     TAQUARUCU                        63
+  106        63     ROSANA                           66
+  107        71     STA CLARA PR                     72
+  108        72     FUNDAO                           73
+  109        74     G.B.MUNHOZ                       76
+  110        81     BAIXO IGUACU                      0
+  111       215     BARRA GRANDE                    217
+  112        89     GARIBALDI                       216
+  113       216     CAMPOS NOVOS                    217
+  114       217     MACHADINHO                       92
+  115        92     ITA                              94
+  116        93     PASSO FUNDO                     220
+  117       220     MONJOLINHO                       94
+  118       286     QUEBRA QUEIX                      0
+  119       102     SAO JOSE                        103
+  120       103     PASSO SAO JO                      0
+  121        94     FOZ CHAPECO                       0
+  122        98     CASTRO ALVES                     97
+  123        97     MONTE CLARO                     284
+  124       284     14 DE JULHO                       0
+  125       110     ERNESTINA                       111
+  126       111     PASSO REAL                      112
+  127       112     JACUI                           113
+  128       113     ITAUBA                          114
+  129       114     D.FRANCISCA                       0
+  130       115     G.P.SOUZA                         0
+  131       101     SALTO PILAO                       0
+  132        73     JORDAO                           77
+  133        76     SEGREDO                          77
+  134        77     SLT.SANTIAGO                     78
+  135        78     SALTO OSORIO                    222
+  136       222     SALTO CAXIAS                     81
+  137       169     SOBRADINHO                      172
+  138       172     ITAPARICA                       176
+  139       176     COMP. MOXOTO                    178
+  140       178     XINGO                             0
+  141       188     ITAPEBI                           0
+  142       254     P.CAVALO                          0
+  143       190     B. ESPERANCA                      0
+  144       204     CACH.CALDEIR                    280
+  145       271     ESTREITO TOC                    275
+  146       275     TUCURUI                           0
+  147       269     BALBINA                           0
+  148       280     COARACY NUNE                    297
+  149       297     FERREIRA GOM                      0
+  150       290     STO ANT JARI                      0
+  151       302     PIMENTAL ART                      0
+  152       277     CURUA-UNA                         0
+  153       292     BELO MONTE A                      0
+  154      9000     Vazao Nula                        0
+  155       125     STA. CECILIA                    129
+  156       203     SANTANA                         129
+  157       201     TOCOS                           203

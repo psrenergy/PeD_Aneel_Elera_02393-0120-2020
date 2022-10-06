@@ -1,0 +1,54 @@
+$version=1
+!Code,Name,Outer basin
+1,1 - Amazonas,
+2,2 - Tocantins,
+3,3 - Atlântico-Trecho Norte/Nordeste,
+4,4 - São Francisco,
+5,5 - Atlântico-Trecho Leste,
+6,6 - Paraná,
+7,7 - Uruguai,
+8,8 - Atlântico-Trecho Sudeste,
+14,1.1 - Negro,1
+15,1.2 - Madeira,1
+16,"1.3 - Amazonas, entre os rios Madeira e Trombetas",1
+17,1.4 - Tapajos,1
+18,1.5 - Xingu e Paru,1
+19,"1.6 - Amazonas, entre o rio Xingu e a foz",1
+20,2.1 - Alto Tocantins e rio Preto,2
+21,"2.2 - Tocantins, entre os rios Preto e Parana",2
+22,"2.3 - Tocantins, entre os rios Parana e do Sono",2
+23,"2.4 - Tocantins, entre os rios do Sono e Araguaia",2
+24,2.5 - Alto Araguaia e rio Claro,2
+29,"2.6 - Tocantins, entre o rio Araguaia e a foz",2
+30,3.1 - Oiapoque e outros,3
+34,3.2 - Parnaiba,3
+40,"4.1 - Alto Sao Francisco, ate Tres Marias",4
+41,4.2 - Das Velhas - Sao Francisco,4
+42,4.3 - Paracatu e outros - Sao Francisco,4
+47,4.4 - Salitre e outros - Sao Francisco,4
+49,"4.5 - Sao Francisco, a jusante do Pajeu",4
+51,"5.1 - Jequirica, Paraguacu e outros",5
+54,5.2 - Jequitinhonha,5
+55,"5.3 - Sao mateus, Itanhem e outros",5
+56,5.4 - Doce,5
+57,5.5 - Litoraneas do Espirito Santo,5
+58,5.6 - Paraiba do Sul,5
+59,5.7 - Litoraneas do Rio de Janeiro,5
+60,6.1 - Paranaiba,6
+61,6.2 - Grande,6
+62,"6.3 - Parana, Tiete e outros",6
+63,"6.4 - Parana, Verde , Peixe, e outros",6
+64,"6.5 - Parana, Paranapanema, Amambai e outros",6
+65,"6.6 - Parana, Iguacu",6
+66,6.7 - Alto Paraguai,6
+70,7.1 - Pelotas,7
+71,7.2 - Canoas,7
+72,"7.3 - Uruguai, Inhanduva, Peixe e outros",7
+73,"7.4 - Uruguai, Chapeco, Passo Fundo e outros",7
+74,"7.5 - Uruguai, Varzea, Turvo e outros",7
+75,"7.6 - Uruguai, Ijui, Piratinim e outros",7
+80,8.1 - Litoraneas de Sao Paulo,8
+81,8.2 - Ribeira do Iguape,8
+83,8.3 - Itajai,8
+85,8.4 - Alto Jacui,8
+86,8.5 - Taquari,8

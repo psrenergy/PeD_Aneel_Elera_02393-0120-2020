@@ -1,0 +1,34 @@
+(PCH Gr.. Opt. Def. Descricao
+NEWV    1    0    0 NEWAVE versao <= 12.3.
+NEWV    1    1    1 NEWAVE versao >= 14.0.
+SDPV    2    0    0 SDDP versao inferior a 9.1
+SDPV    2    1    0 SDDP versao superior ou igual a  9.1
+SDPV    2    2    1 SDDP versao superior ou igual a 10.0
+IMPR    3    1    0 Impressao dos dados lidos.
+CVI6    4    0    0 Corrigir vazoes incrementais negativas: desativado.
+CVI6    4    1    1 Corrigir vazoes incrementais negativas: 6 meses anteriores ao inicio do estudo.
+CVI6    4    2    0 Corrigir vazoes incrementais negativas: historico completo.
+CMNT    5    1    1 Corrigir manutencao das usinas termicas.
+CGNT    6    1    1 Corrigir geracao minima das usinas termicas.
+POLA    7    0    1 Tabelas: Metodo de aproximacao com pontos extremos fixos.
+POLA    7    1    0 Tabelas: Metodo de aproximacao com pontos extremos livres.
+POLA    7    2    0 Tabelas: Interpolacao simples do polinomio.
+PPOL    8    0    1 Polinomios: considerar polinomio de jusante.
+PPOL    8    1    0 Polinomios: considerar dados basicos.
+PVMT    9    1    1 Considerar enchimento de volume morto.
+CARP   10    2    1 SDDP - Penalizacao CAR: reduzida individualizada em cada abertura da fase backward.
+CARP   10    0    0 SDDP - Penalizacao CAR: referencia.
+CARP   10    1    0 SDDP - Penalizacao CAR: reduzida somente na primeira abertura da fase backward.
+SEED   11    1    0 SDDP - SEED: 33013.
+SABS   12    1    1 SDDP - Utilizar semente absoluta.
+PSER   13    1    1 SDDP - Geracao de series hidrologicas com psi variavel.
+OPTG   14    1    1 Atualizar cadastro alem dos arquivos de modificacao.
+CMQF   15    1    0 Corrigir usinas hidreletricas com primeira maquina ficticia.
+NAME   16    0    0 Renomear elementos com nomes duplicados automaticamente.
+VAZC   17    1    0 Utilizar arquivos de vazoes do DECOMP (VAZOESC.DAT).
+NSIM   18    0    0 SDDP - Utilizar  200 cenarios forward.
+NSIM   18    1    1 SDDP - Utilizar 1200 cenarios forward.
+VRTC   19    1    1 Vertimento controlavel em todas as usinas.
+NFIO   20    1    1 Utilizar criterio do Newave para classificacao de usinas fio d'agua.
+VHCF   21    1    1 Utilizar vazao maxima do historico no calculo da tabela cota x def. c. fuga.
+UPEN   22    1    0 Utilizar dados de penalidades do Newave.

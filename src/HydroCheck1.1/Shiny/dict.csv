@@ -1,0 +1,59 @@
+key,en,pt,es
+FLOWTYPE,Inflow type,Tipo de vazão,Tipo de caudal
+GAUGINGSTATION,Hydropower plant,Usina Hidrelétrica,Central Hidroeléctrica
+VISUALIZATION,Visualization,Visualização,Visualización
+XVAR,X-axis variable,Variável do eixo X,Variable del eje X
+YVAR,Y-axis variable,Variável do eixo Y,Variable del eje Y
+COLORVAR,Color scale variable,Variável de escala de cores,Variable de escala de color
+SIZESCALE,Size scale,Escala de tamanho,Escala de tamaño
+SIZESCALEVAR,Size scale variable,Variável de escala de tamanho,Variable de escala de tamaño
+DESCR_ABOUT,"Please refer to the ""About"" page for more information about this app.","Consulte a página ""Sobre"" para obter mais informações sobre este aplicativo.","Consulte la página ""Sobre"" de para obtener más información sobre esta aplicación."
+ABOUT,About,Sobre,Sobre
+ABOUT_FILE,about_en.md,about_pt.md,about_es.md
+WARN,Warnings KPSS,Avisos KPSS,Advertencias KPSS
+WARNDESC,Warnings for reported stations,Avisos para estações relatadas,Advertencias para estaciones reportadas
+ANNUALAVGS,Annual Avgs.,Média anual,Promedios anuales
+ANNUALAVGSDESC,Average inflows per year,Vazões médias por ano,Flujos promedios por año
+CVYEAR,CV per year,CV por ano,CV por año
+CVYEARDESC,CV of the inflows within the years of record (inter-annual variation),CV das vazões nos anos de registro (variação interanual),CV de las entradas en los años de registro (variación interanual)
+CVSTAGE_WEEK,CV per week,CV por semana,CV por semana
+CVSTAGE_MONTH,CV per month,CV por mês,CV por mes
+CVSTAGEDESC,CV of the inflows for each stage for all years of record,CV das vazões para cada estágio para todos os anos de registro,CV de las entradas de cada etapa para todos los años de registro
+HISTFLOWS,Hist. flows,Hist. vazões,Hist. fluye
+HISTFLOWSDESC,Flows series for the selected plant,Série de vazões para a usina selecionada,Serie de flujos para la central seleccionada
+LONGTERMMEAN,Long-term Mean,Média de longo prazo,Media a largo plazo
+CVANNUALAVG,CV Annual Avg.,CV Méd. Anual,CV promedio anual
+KPSSCONSTTEST,KPSS test,Teste KPSS,Prueba KPSS
+KPSSLINEARTEST,KPSS Linear test,Teste Linear KPSS,Prueba lineal KPSS
+TRENDTEST,Trend test,Teste de tendência,Prueba de tendencia
+OTHER,Other,Outro,Otro
+BASIN,Basin,Bacia,Cuenca
+FILTERS,Basin filter,Filtro por bacia,Filtro por cuenca
+NOFILTER,All basins,Todas as bacias,Todas las cuencas
+MSGCVHIGH,CV-value is too high. Please consider reviewing data,O valor do CV é muito alto. Considere revisar os dados,El valor de CV es demasiado alto. Considere revisar los datos
+MSGKPSSCONSTHIGH,KPSS-value (const.) is too high. Please consider reviewing data,O valor KPSS (const.) é muito alto. Considere revisar os dados,El valor KPSS (const.) es demasiado alto. Considere revisar los datos
+MSGKPSSLINEARHIGH,KPSS-value (linear) is too high. Please consider reviewing data,O valor KPSS (linear) é muito alto. Considere revisar os dados,El valor KPSS (lineal) es demasiado alto. Considere revisar los datos
+MSGRATIOHIGH,Value of the trend test is too high. Please consider reviewing data,O valor do teste de tendência é muito alto. Considere revisar os dados,El valor de la prueba de tendencia es demasiado alto. Considere revisar los datos
+INCREMENTALINFLOWUNIT,Incremental Inflows (m3/s),Vazões incrementais (m3/s),Caudales incrementales (m3/s)
+TOTALINFLOWUNIT,Total Inflows (m3/s),Vazões totais (m3/s),Caudales totales (m3/s)
+YEAR,Year,Ano,Año
+MONTH,Month,Mês,Mes
+WEEK,Week,Semana,Semana
+VALUE,KPSS,KPSS,KPSS
+NAME,Hydropower plant,Usina,Central
+NUMBER,Code,Código,Código
+TEXTCV,CV,CV,CV
+TEXTKPSSCONST,KPSS test,Teste KPSS,Prueba KPSS
+TEXTKPSSLIN,KPSS test (lin.),Teste KPSS (lin.),Prueba KPSS (lin.)
+TEXTTREND,Trend test,Teste de tendência,Prueba de tendencia
+STATION,Plant,Usina,Central
+TEXTKPSSCONSTTOOLTIP,KPSS,KPSS,KPSS
+SUBSYSTEM,Subsystem,Subsistema,Subsistema
+POWER,Power (MW),Potência (MW),Potencia (MW)
+DESCR_TABLE,*The warning table considers only results of KPSS tests performed with series of incremental inflow,*A tabela de avisos considera somente resultados do teste de KPSS para séries de vazões incrementais,*La tabla de avisos considera solo los resultados de la pruebas de KPSS para series de caudales incrementales
+TOL,Limit,Limite,Limite
+INCRFLOW,Incremental Inflow,Vazão incremental,Caudal incremental
+TOTFLOW,Total Inflow,Vazão total,Caudal total
+RESULTS,Results,Resultados,Resultados
+RESULTDESC,Results to the tests,Resultados dos testes realizados,Resultados de las pruebas
+DOWNLOAD,Download Results,Baixar resultados,Descargar resultados

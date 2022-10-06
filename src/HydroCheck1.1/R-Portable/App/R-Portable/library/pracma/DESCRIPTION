@@ -1,0 +1,29 @@
+Package: pracma
+Type: Package
+Version: 2.2.5
+Date: 2019-04-08
+Title: Practical Numerical Math Functions
+Authors@R: person("Hans W.", "Borchers", 
+                  email="hwborchers@googlemail.com", 
+                  role=c("aut", "cre"))
+Depends: R (>= 3.1.0)
+Imports: graphics, grDevices, stats, utils
+Suggests: NlcOptim, quadprog
+Description: 
+    Provides a large number of functions from numerical analysis and
+    linear algebra, numerical optimization, differential equations,
+    time series, plus some well-known special mathematical functions.
+    Uses 'MATLAB' function names where appropriate to simplify porting.
+License: GPL (>= 3)
+ByteCompile: true
+LazyData: yes
+Author: Hans W. Borchers [aut, cre]
+Maintainer: Hans W. Borchers <hwborchers@googlemail.com>
+Repository: CRAN
+Repository/R-Forge/Project: optimist
+Repository/R-Forge/Revision: 472
+Repository/R-Forge/DateTimeStamp: 2019-04-08 12:29:03
+Date/Publication: 2019-04-09 05:10:07 UTC
+NeedsCompilation: no
+Packaged: 2019-04-08 12:50:10 UTC; rforge
+Built: R 3.6.1; ; 2019-07-11 14:21:52 UTC; windows
