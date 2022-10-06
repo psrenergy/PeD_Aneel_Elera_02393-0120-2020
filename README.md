@@ -1,3 +1,14 @@
+# Módulo HydroCheck
+
+O módulo HydroCheck tem o objetivo de identificar possíveis inconsistências nos dados históricos de vazões afluentes que tenham sido fornecidos. Para isso, ele calcula as seguintes métricas para cada usina:
+
+* Média de Longo Prazo: Média dos valores anuais médios de afluência para todos os anos. A falta de dados para determinado ano de uma estação fará com que esse ano seja desconsiderado para evitar a introdução de desvios.
+* Coeficiente de Variação da média anual (CV Méd. Anual): Medida adimensional calculada a partir da razão entre o desvio padrão das afluências anuais médias de cada usina e sua média. Valores altos para o CV das médias anuais de afluência de uma determinada usina podem indicar a existência de afluências irreais. Costumeiramente, os CVs reduzem com o aumento da afluência média, já que vazões maiores estão associadas a maiores áreas de escoamento, que resultam da soma de vazões afluentes de várias sub-bacias hidrográficas, cujas variabilidades individuais se cancelam ao se juntarem à bacia maior.
+* Teste de KPSS: Testa a hipótese de que a série temporal de vazões é estacionária ao redor de sua média. Quanto mais baixo o valor, mais estacionária é a série.
+* Teste de Tendência: É uma medida adimensional simplificada da tendência da série temporal, isto é, se as vazões aumentaram ou reduziram com o tempo. Valores positivos significam um aumento nas afluências, enquanto valores negativos indicam que as afluências reduziram para a usina analisada. 
+
+No diretório `HydroCheck1.1`, em `src`, está disponível o programa compilado e código fonte do módulo.
+
 # Reconhecimento de Áreas Irrigadas e seus Respectivos Cultivos para análise de Extração de Água da Bacia do Rio São Francisco
 
 ## Apêndice 
@@ -21,11 +32,6 @@ Contém:
 ### Scripts de ArcGIS
 
 Na pasta `flowEstimator`,em `src`, estão disponíveis também arquivos de código Python utilizados como módulos para rotinas de geoprocessamento em ArcGIS.
-
-### Módulo HydroCheck
-
-No diretório `HydroCheck1.1`, também em `src`, está disponível o programa compilado e código fonte do módulo HydroCheck, ferramenta para validação de dados de vazão.
-
 
 ---
 ## Resumo
@@ -92,16 +98,6 @@ A aplicação de cada um desses conjuntos estará sendo desenvolvida ao longo da
 
 ---
 ## Metodologia
-
-### Módulo HydroCheck
-
-O módulo HydroCheck tem o objetivo de identificar possíveis inconsistências nos dados históricos de vazões afluentes que tenham sido fornecidos. Para isso, ele calcula as seguintes métricas para cada usina:
-* Média de Longo Prazo: Média dos valores anuais médios de afluência para todos os anos. A falta de dados para determinado ano de uma estação fará com que esse ano seja desconsiderado para evitar a introdução de desvios.
-* Coeficiente de Variação da média anual (CV Méd. Anual): Medida adimensional calculada a partir da razão entre o desvio padrão das afluências anuais médias de cada usina e sua média. Valores altos para o CV das médias anuais de afluência de uma determinada usina podem indicar a existência de afluências irreais. Costumeiramente, os CVs reduzem com o aumento da afluência média, já que vazões maiores estão associadas a maiores áreas de escoamento, que resultam da soma de vazões afluentes de várias sub-bacias hidrográficas, cujas variabilidades individuais se cancelam ao se juntarem à bacia maior.
-* Teste de KPSS: Testa a hipótese de que a série temporal de vazões é estacionária ao redor de sua média. Quanto mais baixo o valor, mais estacionária é a série.
-* Teste de Tendência: É uma medida adimensional simplificada da tendência da série temporal, isto é, se as vazões aumentaram ou reduziram com o tempo. Valores positivos significam um aumento nas afluências, enquanto valores negativos indicam que as afluências reduziram para a usina analisada. 
-
-O módulo foi utilizado para avaliar a qualidade dos dados de vazão usados nas etapas posteriores do projeto.
 
 ### Identificação de áreas de baixo estresse hídrico
 
