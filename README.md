@@ -29,9 +29,13 @@ Contém:
 * Preprocessamento, treinamento, EEfication e exportação do modelo para a Google AI Platform: https://colab.research.google.com/drive/1KDfBen-KGxY3K1gPnya9Nz84EJeV95el?usp=sharing
 * Avaliação da Bacia de São Francisco Completa e Exportação para o Google Earth Engine: https://colab.research.google.com/drive/1SKql_37rHBAcvhTv1KdqD0PW4UJcaGyl?usp=sharing
 
-### Scripts de ArcGIS
-
-Na pasta `flowEstimator`,em `src`, estão disponíveis também arquivos de código Python utilizados como módulos para rotinas de geoprocessamento em ArcGIS.
+### ArcGIS 
+ 
+* Toolbox ArGIS 
+  * Na pasta `docs` está disponível o manual de uso da toolbox do ArcGIS chamada `MRE`. 
+  * Na pasta `ArcGIS`,em `src`, está disponível a toolbox do ArcGIS chamada `MRE`. 
+* Scripts Python  
+  * Na pasta `scripts`,em `src`, estão disponíveis também os arquivos em Python que são utilizados pela toolbox `MRE`.
 
 ---
 ## Resumo
@@ -166,3 +170,13 @@ Em seguida, treinou-se mais uma vez o modelo, dessa vez tanto com dados do MapBi
 ![Resultados Petrolina e Juazeiro](/assets/results_petr_2.png "Resultados Petrolina e Juazeiro")
 
 A esquerda: áreas de cultivo irrigado reconhecidas pelo modelo em Petrolina, de uva (roxo), manga (laranja), coco ou banana (branco), cana (azul), herbáceas (vermelho) e café (rosa). A direita: áreas identificadas como irrigadas na mesma região. Nota-se forte presença de manga, uva e cana. Os dois primeiros estão completamente de acordo com o esperado, já a cana, apesar de não ser o que se imaginava, ainda é um cultivo possível nessa região. Em geral, o modelo manifesta a tendência esperada de acordo com a viagem de campo.
+
+### Evaporação líquida de massas d'água
+Esta etapa da metodologia, envolve a identificação das massas d'água artificiais (com exceção dos lagos de UHEs) localizadas na bacia do São Francisco e posterior cálculo da evaporação líquida de cada massa d´água.
+A identificação das massas d'água foi conduzida no ambiente *Google Earth Engine*, enquanto que o cálculo de evaporação líquida, no ambiente *ArcGIS*, através do uso da toolbox `MRE`.
+A toolbox MRE do ArcGIS está disponível na pasta `src/MRE/ArcGIS`.
+O manual de uso da toolbox, contendo a descrição detalhada da metodologia seguida, está disponível na pasta `docs`.   
+
+### Fluxo de retirada de água para uso em irrigação
+Esta etapa da metodologia, implementada na toolbox `MRE`, envolve o cálculo de fluxo de retirada de água para o uso nos cultivos irrigados.  
+A documentação completa da metodologia está descrita no manual de uso da toolbox, disponível na pasta `docs`.   
