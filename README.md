@@ -1,43 +1,5 @@
-# Módulo HydroCheck
+# Reconhecimento de Áreas Irrigadas e seus Respectivos Cultivos para análise de Retirada de Água da Bacia do Rio São Francisco
 
-O módulo HydroCheck tem o objetivo de identificar possíveis inconsistências nos dados históricos de vazões afluentes que tenham sido fornecidos. Para isso, ele calcula as seguintes métricas para cada usina:
-
-* Média de Longo Prazo: Média dos valores anuais médios de afluência para todos os anos. A falta de dados para determinado ano de uma estação fará com que esse ano seja desconsiderado para evitar a introdução de desvios.
-* Coeficiente de Variação da média anual (CV Méd. Anual): Medida adimensional calculada a partir da razão entre o desvio padrão das afluências anuais médias de cada usina e sua média. Valores altos para o CV das médias anuais de afluência de uma determinada usina podem indicar a existência de afluências irreais. Costumeiramente, os CVs reduzem com o aumento da afluência média, já que vazões maiores estão associadas a maiores áreas de escoamento, que resultam da soma de vazões afluentes de várias sub-bacias hidrográficas, cujas variabilidades individuais se cancelam ao se juntarem à bacia maior.
-* Teste de KPSS: Testa a hipótese de que a série temporal de vazões é estacionária ao redor de sua média. Quanto mais baixo o valor, mais estacionária é a série.
-* Teste de Tendência: É uma medida adimensional simplificada da tendência da série temporal, isto é, se as vazões aumentaram ou reduziram com o tempo. Valores positivos significam um aumento nas afluências, enquanto valores negativos indicam que as afluências reduziram para a usina analisada. 
-
-No diretório `HydroCheck1.1`, em `src`, está disponível o programa compilado e código fonte do módulo.
-
-# Reconhecimento de Áreas Irrigadas e seus Respectivos Cultivos para análise de Extração de Água da Bacia do Rio São Francisco
-
-## Apêndice 
-
-### Diretório do Google Earth Engine
-
-https://code.earthengine.google.com/?accept_repo=users/rodrigobenoliel/water_crops_est
-
-Contém:
-
-* `irrigacao_sent2`: código de reconhecimento de áreas de baixo estresse hídrico.
-* `classificador_tf_uni_prepoc`: código de preprocessamento de dados para treinamento do modelo.
-* `tf_uni_test`: código de validação do modelo e visualização.
-* `visualization`: visualização de classificação sobre Bacia do Rio São Francisco.
-
-### Notebooks de Google Colab
-
-* Preprocessamento, treinamento, EEfication e exportação do modelo para a Google AI Platform: https://colab.research.google.com/drive/1KDfBen-KGxY3K1gPnya9Nz84EJeV95el?usp=sharing
-* Avaliação da Bacia de São Francisco Completa e Exportação para o Google Earth Engine: https://colab.research.google.com/drive/1SKql_37rHBAcvhTv1KdqD0PW4UJcaGyl?usp=sharing
-
-### ArcGIS 
- 
-* Toolbox ArGIS 
-  * Na pasta `docs` está disponível o manual de uso da toolbox do ArcGIS chamada `MRE`. 
-  * Na pasta `ArcGIS`,em `src`, está disponível a toolbox do ArcGIS chamada `MRE`. 
-* Scripts Python  
-  * Na pasta `scripts`,em `src`, estão disponíveis também os arquivos em Python que são utilizados pela toolbox `MRE`.
-
----
 ## Resumo
 Este repositório apresenta o resultado da pesquisa por uma metodologia para melhorar a gestão da água
 considerando o nexo água-alimentos-energia ao quantificar as retiradas d’água em bacias hidrográficas. Um
@@ -180,3 +142,46 @@ O manual de uso da toolbox, contendo a descrição detalhada da metodologia segu
 ### Fluxo de retirada de água para uso em irrigação
 Esta etapa da metodologia, implementada na toolbox `MRE`, envolve o cálculo de fluxo de retirada de água para o uso nos cultivos irrigados.  
 A documentação completa da metodologia está descrita no manual de uso da toolbox, disponível na pasta `docs`.   
+
+---
+
+# Módulo HydroCheck
+
+O módulo HydroCheck tem o objetivo de identificar possíveis inconsistências nos dados históricos de vazões afluentes que tenham sido fornecidos. Para isso, ele calcula as seguintes métricas para cada usina:
+
+* Média de Longo Prazo: Média dos valores anuais médios de afluência para todos os anos. A falta de dados para determinado ano de uma estação fará com que esse ano seja desconsiderado para evitar a introdução de desvios.
+* Coeficiente de Variação da média anual (CV Méd. Anual): Medida adimensional calculada a partir da razão entre o desvio padrão das afluências anuais médias de cada usina e sua média. Valores altos para o CV das médias anuais de afluência de uma determinada usina podem indicar a existência de afluências irreais. Costumeiramente, os CVs reduzem com o aumento da afluência média, já que vazões maiores estão associadas a maiores áreas de escoamento, que resultam da soma de vazões afluentes de várias sub-bacias hidrográficas, cujas variabilidades individuais se cancelam ao se juntarem à bacia maior.
+* Teste de KPSS: Testa a hipótese de que a série temporal de vazões é estacionária ao redor de sua média. Quanto mais baixo o valor, mais estacionária é a série.
+* Teste de Tendência: É uma medida adimensional simplificada da tendência da série temporal, isto é, se as vazões aumentaram ou reduziram com o tempo. Valores positivos significam um aumento nas afluências, enquanto valores negativos indicam que as afluências reduziram para a usina analisada. 
+
+No diretório `HydroCheck1.1`, em `src`, está disponível o programa compilado e código fonte do módulo.
+
+---
+
+## Apêndice 
+
+### Diretório do Google Earth Engine
+
+https://code.earthengine.google.com/?accept_repo=users/rodrigobenoliel/water_crops_est
+
+Contém:
+
+* `irrigacao_sent2`: código de reconhecimento de áreas de baixo estresse hídrico.
+* `classificador_tf_uni_prepoc`: código de preprocessamento de dados para treinamento do modelo.
+* `tf_uni_test`: código de validação do modelo e visualização.
+* `visualization`: visualização de classificação sobre Bacia do Rio São Francisco.
+
+### Notebooks de Google Colab
+
+* Preprocessamento, treinamento, EEfication e exportação do modelo para a Google AI Platform: https://colab.research.google.com/drive/1KDfBen-KGxY3K1gPnya9Nz84EJeV95el?usp=sharing
+* Avaliação da Bacia de São Francisco Completa e Exportação para o Google Earth Engine: https://colab.research.google.com/drive/1SKql_37rHBAcvhTv1KdqD0PW4UJcaGyl?usp=sharing
+
+### ArcGIS 
+ 
+* Toolbox ArGIS 
+  * Na pasta `docs` está disponível o manual de uso da toolbox do ArcGIS chamada `MRE.tbx`. 
+  * Na pasta `ArcGIS`,em `src`, está disponível a toolbox do ArcGIS chamada `MRE.tbx`. 
+* Scripts Python  
+  * Na pasta `scripts`,em `src`, estão disponíveis também os arquivos em Python que são utilizados pela toolbox `MRE`.
+* Dados de entrada
+  * Os dados de entrada usados pela toolbox `MRE` estão disponibilizados em uma pasta Dropbox pelo link https://www.dropbox.com/sh/5lwq4jk00bmrgj5/AAAwKuwWosj3EIbyRy6DJRtGa?dl=0  
